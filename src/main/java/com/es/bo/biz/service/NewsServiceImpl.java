@@ -17,6 +17,8 @@ public class NewsServiceImpl implements NewsService {
     private NewsRepository newsRepository;
 
     public void createNews(News news) {
+    	System.out.println("--------------------------------------------");
+    	news.setId(null);
     	newsRepository.save(news);
     }
     
